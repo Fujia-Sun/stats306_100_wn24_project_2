@@ -48,6 +48,17 @@ The [Internet Movie Database (IMDb)]() contains information on millions of movie
 * Find all the actors with first names "Tom", "Thomas", "Thom" or "Tomas". How many are there?
 * How many titles use alliteration (i.e., all words in the title start with the same letter)?
 
+```{r}
+load("data/title_basics_sample.rda")
+title_basics <- data_table
+load("data/title_ratings_sample.rda")
+title_ratings <- data_table
+load("data/title_principals_sample.rda")
+title_principals <- data_table
+load("data/name_basics_sample.rda")
+name_basics <- data_table
+```
+
 ## Part III: Pivoting
 
 * Create a new version of the `titles_basics` table that has one row for each title-genre combination. See the `separate_rows` function for a useful too here.
